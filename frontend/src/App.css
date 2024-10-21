@@ -1,0 +1,88 @@
+/* Basic styling for the chat app */
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+body {
+  background-image: url('/public/raven.jpg'); /* Path to the image */
+  background-size: cover; /* Ensure the background covers the whole page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Optional: Define font */
+}
+
+.chat-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make text readable */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow */
+}
+
+
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+
+.chat-box {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.message {
+  max-width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
