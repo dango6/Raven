@@ -1,0 +1,25 @@
+# Python ignores
+__pycache__/
+*.py[cod]
+*.so
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Node.js / JavaScript ignores
+node_modules/
+dist/
+build/
+npm-debug.log*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Optional: IDE-specific ignores
+.vscode/
+.idea/
+*.swp
